@@ -163,7 +163,24 @@ label{
     background: #002D87;
     color: #fff;
 }
-
+@media (max-width: 767px) {
+    .body-login {
+        height: auto;
+        display: block;
+    }
+    .row-form{
+        height: auto;
+        width: 100%;
+        margin-top: 10%;;
+    }
+    .row-form>div:first-child {
+        padding: 50px 20px;
+    
+    }
+    .col-form {
+        padding: 50px 20px!important;
+    }
+}
 /*OPERACIONES*/
 .box{
     box-shadow: 0px 15px 30px 0px #00216626;
@@ -225,4 +242,13 @@ label{
 }
 .btn-regresar{
     margin-top: 20px;;
+}
+@media (max-width: 767px){
+    .body-opreciones{
+        height: auto;
+        padding-top: 10%;
+    }
+    .box {
+        margin-bottom: 20px;
+    }
 }
