@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?bnr07l');
+    src:  url('fonts/icomoon.eot?bnr07l#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?bnr07l') format('truetype'),
+      url('fonts/icomoon.woff?bnr07l') format('woff'),
+      url('fonts/icomoon.svg?bnr07l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-success_1:before {
+    content: "\e901";
+  }
+  .icon-file_1:before {
+    content: "\e902";
+  }
+  .icon-user:before {
+    content: "\e903";
+  }
+  .icon-padlock:before {
+    content: "\e904";
+  }
+  .icon-chat:before {
+    content: "\e900";
+  }
+
+/*GENERAL*/
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+h1, h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #002D87;
+}
+
+.customInput{
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.hide{
+    display: none;
+}
+.error{
+    color: red;
+    margin-top: -10px;
+    font-family: sans-serif;
+}
+
+.lista{
+    color: #fff;
+   
+    font-size: 14px;
+}
+.body-login{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-form{
+   height: 80vh;
+   background-color: #DAEEFF;
+   justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 30px 0px #00216626 !important;
+    transition: all ease-in 200ms;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+} 
+.row-form h2{
+    color: #fff;
+    font-size: 25px;
+}
+.row-form>div:first-child{
+    padding: 0 7%;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background: #012d74;
+}
+.col-form{
+    padding: 0 7%!important;
+  
+}
+.col-form h3{
+    font-size: 22px;
+    margin-bottom: 10px;;
+}
+label{
+    color: #002D87;
+    font-weight: 500;
+    display: block;
+}
+.custom-input-box {
+    margin-bottom: 20px;;
+}
+.custom-input-box i {
+	color: #002D87;
+	font-size: 14px;
+	left: 0px;
+	position: absolute;
+	top: 15px;
+	z-index: 9;
+}
+.custom-input-box .form-control {
+	border-radius: 0px;
+	height: 45px;
+	padding-left: 20px;
+	border: none;
+	border-bottom: 1px solid #7194BD;
+	background: none;
+    font-size: 12px;
+    box-shadow: none;;
+}
+.custom-input-box .form-control:focus,
+.custom-input-box .form-control:active{
+    box-shadow: none;
+}
+
+.custom-input-box {
+	position: relative;
+}
+.btn-enviar,
+.btn-regresar{
+    color: #fff;
+    background-color: #ff7800;
+    border-color: #ff7800;
+    border-radius: 20px;
+    padding: 5px 50px;
+    border: none;
+   
+}
+.btn-enviar:hover,
+.btn-regresar:hover{
+    background: #002D87;
+    color: #fff;
+}
+
+/*OPERACIONES*/
+.box{
+    box-shadow: 0px 15px 30px 0px #00216626;
+    padding:  30px 20px;
+    border-radius: 8px;
+    background: #fff;
+}
+.box p{
+    margin-bottom: 0;
+    color: #002D87;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.box i{
+    color: #ff7800;
+    font-size: 29px;
+}
+.form-opreaciones button{
+    background: #002D87;
+    color: #fff;
+    border:  0px;
+    padding: 6px;
+    min-width: 100px;
+}
+.form-opreaciones .form-control{
+    height: 35px;
+    padding-left: 0px;
+}
+.form-opreaciones .custom-input-box{
+    padding-left: 35px;
+}
+.form-opreaciones .custom-input-box::before{
+    content: "S/";
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    color: #002D87;
+    font-weight: 600;
+}
+.saldo-disponible p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.body-opreciones{
+    background: #DAEEFF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.row-opreaciones>div:last-child{
+   padding-left: 5%;
+}
+.section-box.show{
+    display: block;
+}
+.datos-info i{
+    margin-right: 5px;
+    font-weight: 700;
+}
+.btn-regresar{
+    margin-top: 20px;;
+}

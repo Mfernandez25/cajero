@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./iconos.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body-login">
+    <div class="container">
+        <div class="row row-form">
+            <div class="col-md-6">
+                <h2>Bienvenido a tu cuenta <br>
+                <strong>tu nueva banca por internet</strong></h2>
+            </div>      
+            <div class="col-md-6 col-form">
+                <h3>Banca por internet</h3>
+                <form id="formulario">
+                    <div class="form-group">
+                        <span id="errorDatos" class="hide">Ingresa tus datos</span>
+                        <label>Ingresa tu usuario</label>
+                        <div class="custom-input-box">
+                            <i class="icon-user"></i><input  id="usuario" type="text" class="form-control">
+                            <span id="errorUsuario" class="hide">Usuario incorrecto</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ingresa tu contraseña</label>
+                        <div class="custom-input-box">
+                            <i class="icon-padlock"></i><input  id="password" type="password" class="form-control">
+                            <span id="errorPassword" class="hide">Contraseña incorrect</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-enviar" id="btn" >Enviar</button>
+                </form>
+                <div class="render" id="render"></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

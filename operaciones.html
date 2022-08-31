@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body-opreciones">
+    <div class="container">
+        
+        <div class="row row-opreaciones">
+            <div class="col-md-12">
+                <div class="datos-info">
+                    <h5><i class="icon-user"></i>Hola <span id="name"></span></h4>
+                        
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Bienvenido a tu cuenta</h3>
+                <p>
+                    Gestina tus operaciones de manera sencilla desde el menú 
+                </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box" role="button" id="consultarSaldo">
+                            <i class="icon-file_1"></i>
+                            <p>Consulta tu saldo</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box" role="button" id="depostaDinero">
+                            <i class="icon-file_1"></i>
+                            <p>Deposita dinero</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box" role="button" id="retirarDinero">
+                            <i class="icon-file_1"></i>
+                            <p>Retira dinero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="saldo-disponible section-box hide">
+                    <h4>Saldo disponible</h4>
+                    <p id="monto-saldo"></p>
+                </div>
+                <div class="ingresar-dinero section-box hide">
+                    <div class="form-group form-opreaciones">
+                        <span id="errorDatos" class="hide">Ingresa tus datos</span>
+                        <label>Ingresa el dinero a depositar</label>
+                        <div class="row">
+                            <div class="custom-input-box col-sm-6">
+                                <input  id="montoDepositar" type="number" class="form-control">
+                            </div>
+                            <div class="col-sm-6">
+                                <button id="btn-depositar">DEPOSITAR</button>
+                            </div>
+                            <div id="render-deposito"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="retira-dinero section-box hide">
+                    <div class="form-group form-opreaciones">
+                        <span id="errorDatos" class="hide">Ingresa tus datos</span>
+                        <label>Ingresa el dinero a retirar</label>
+                        <div class="row">
+                            <div class="custom-input-box col-sm-6">
+                                <input  id="montoRetirar" type="number" class="form-control">
+                                <span id="errorUsuario" class="hide">Usuario incorrecto</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <button id="btn-retirar">RETIRAR</button>
+                            </div>
+                            <div id="render"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button id="regresar" class="btn-regresar">Salir</button>
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="./operaciones.js"></script>
+</body>
+</html>
